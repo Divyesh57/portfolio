@@ -275,29 +275,50 @@ header nav {
     to { transform: translate(-40%, -60%) scale(1.2); }
 }
 
-/* Stats */
-.stats {
+/* About Section */
+.about-container {
+    max-width: 900px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.about-content strong {
+    color: var(--text-main);
+}
+
+.stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: -4rem;
-    position: relative;
-    z-index: 5;
+    margin-top: 4rem;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 4rem;
 }
 
-.stat-card {
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    padding: 2rem;
-    border-radius: 16px;
+.stat-item {
     text-align: center;
-    backdrop-filter: blur(10px);
 }
 
-.stat-card h3 {
-    font-size: 2.5rem;
-    color: var(--accent-primary);
+.stat-number {
+    display: block;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #22d3ee; /* Cyan like standard high-end themes */
+    font-family: 'Lexend', sans-serif;
+    line-height: 1;
     margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 1px;
 }
 
 /* Projects */
