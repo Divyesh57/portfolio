@@ -413,6 +413,45 @@ header nav {
     gap: 3rem;
 }
 
+/* Certifications */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    padding: 2rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: var(--transition-smooth);
+}
+
+.cert-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-5px);
+}
+
+.cert-icon i {
+    color: var(--accent-primary);
+    width: 32px;
+    height: 32px;
+}
+
+.cert-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.cert-content p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
 .skill-category h3 { margin-bottom: 2rem; border-left: 3px solid var(--accent-primary); padding-left: 1rem; }
 
 .skill-item { margin-bottom: 1.5rem; }
